@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__logo">Developer</div>
+    <nav class="nav">
+      <a class="nav__item">
+        Работы
+        <a />
+        <a class="nav__item">Услуги</a>
+        <a class="nav__item">Процесс</>
+          <a class="nav__item">Обо мне</a>
+          <a class="nav__item">Контакты</a>
+    </nav>
+    <h1 class="header__phrase">Сайты на Тильде, которые убеждают и продают</h1>
+    <p class="header__definition">
+      Изучаем ваш бизнес. Узнаем, что важно клиентам,<br> как вызвать доверие и
+      довести до заявки или покупки
+    </p>
+    <div class="header__buttons">
+      <button class="button button_theme_black">Связаться в Telegram</button>
+      <button class="button button_theme_light"><img src="icons/play.svg"
+          alt="Посмотреть портфолио">Видеопортфолио</button>
+    </div>
+    <div class="icon icon_chat1"><img src="icons/chat.svg" alt=""></div>
+    <div class="icon icon_developer1"><img src="icons/developer.svg" alt=""></div>
+    <div class="icon icon_lighting1"><img src="icons/lighting.svg" alt=""></div>
+    <div class="icon icon_timer1"><img src="icons/timer.svg" alt=""></div>
+  </header>
+  <section class="portfolio">
+    <div class="filters">
+      <a class="filters__item filters__item_active">Все</a>
+      <!-- TODO:Подумать про ссылки или кнопки -->
+      <a class="filters__item filters__item_inactive">Сайт под ключ</a>
+      <a class="filters__item filters__item_inactive">Разработка</a>
+      <a class="filters__item filters__item_inactive">Дизайн</a>
+    </div>
+    <div class="gallery">
+      <!-- TODO:Позиционирование -->
+      <div class="gallery__item gallery__item1"></div>
+      <div class="gallery__item gallery__item2"></div>
+      <div class="gallery__item gallery__item3"></div>
+      <div class="gallery__item gallery__item4"></div>
+      <div class="gallery__item gallery__item5"></div>
+      <div class="gallery__item gallery__item6"></div>
+    </div>
+  </section>
+  <section class="profile">
+    <div class="profile__img-container"><img class="profile__img" src="img/Rectangle 554.png" alt="">
+      <div class="icon icon_cup1"><img src="icons/cup.svg" alt=""></div></div>
+    <div class="profile__information">
+      <h2 class="h2 h2_theme_light">Designer & Developer</h2>
+      <p class="profile__text">Меня зовут гигачад. За 3 года создания сайтов я основал свою студию, собрал людей,
+        готовых к плотной работе.</p>
+      <p class="profile__text"> Запустили лендинг и б2б продукт для UFC. Работали с ВШЭ и МИЭМом. Запустили множество
+        эвентовых проектов и брендинг. Готовы забирать в команду лучших,
+        прокачивать их компетенции, и взращивать русское айти комьюнити</p>
+      <div class="profile__features">
+        <!-- я выбрал именно такое название для классов, так как  profile__features будет определять внешнюю геометрию, а feature - нет -->
+        <div class="feature">
+          <div class="feature__number">40+</div>
+          <div class="feature__text">Сайтов<br>запустили</div>
+        </div>
+        <div class="feature">
+          <div class="feature__number">100%</div>
+          <div class="feature__text">Выполнено<br>в срок</div>
+        </div>
+        <div class="feature">
+          <div class="feature__number">10+</div>
+          <div class="feature__text">Лет<br>опыта</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="services">
+    <h2 class="h2 h2_theme_black">Услуги</h2>
+    <div class="services__container">
+      <div class="service">
+        <span class="service__number">01</span>
+        <h4 class="service__title">Сайты на тильде</h4>
+        <p class="service__definition">Изучаем ваш бизнес. Узнаем, что важно клиентам, как вызвать доверие и довести до
+          заявки или покупки</p>
+        <div class="divider service__divider"></div>
+        <div class="service__price">От 250 000 ₽</div>
+      </div>
+      <div class="service">
+        <span class="service__number">02</span>
+        <h4 class="service__title">Веб-дизайн</h4>
+        <p class="service__definition">Если есть своя команда разработчиков или фрилансер.
+          И нужен только дизайн сайта без разработки</p>
+        <div class="divider service__divider"></div>
+        <div class="service__price">От 120 000 ₽</div>
+      </div>
+      <div class="service">
+        <span class="service__number">03</span>
+        <h4 class="service__title">Арт-дирекшн</h4>
+        <p class="service__definition">Проконтролирую ваш отдел дизайна, выявлю недочеты в дизайне и процессах работы в
+          команде. Помогу наладить коммуникацию</p>
+        <div class="divider service__divider"></div>
+        <div class="service__price">От 70 000 ₽</div>
+      </div>
+    </div>
+  </section>
+  <section class="count-price">
+    <h2 class="h2 h2_theme_light">Подсчёт стоимости</h2>
+    
+      <form class="count-price-dialog">
+        <select name="work-type" id="work-type" class="count-price-dialog__work-type">
+          <option selected>Тип работы</option>
+          <option>Веб-дизайн</option>
+        </select>
+        <select name="project-size" id="project-size" class="count-price-dialog__project-size">
+          <option selected>Насколько большой проект?</option>
+          <option>Маленький</option>
+          <option>Побольше</option>
+          <option>Большой</option>
+        </select>
+        <div class="checkbox-container">
+          <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
+          <div class="chekbox-container__definition">Да, я слышал про осеннюю школу.<br>
+            Интересно а после нее будет егэ?</div>
+        </div>
+        <button class="button_theme_light button count-price-dialog__button">Рассчитать стоимость</button>
+      </form>
+    
+    <div class="count-price-eval">
+      <h3>Примерный подсчет:</h3>
+      <div class="count-price-eval-item">
+        <!--Здесь создан div без css разметки, чтобы названия следующих классов были интуитивно понятны. Если можно как-то лучше, был бы рад узнать-->
+        <div class="count-price-eval-item__title">
+          Стоимость
+        </div>
+        <div class="count-price-eval-item__text">
+          От 120 000 ₽
+        </div>
+
+      </div>
+      <div class="count-price-eval-item">
+        <div class="count-price-eval-item__title">
+          Примерные сроки
+        </div>
+        <div class="count-price-eval-item__text">
+          14 рабочих дней
+        </div>
+
+
+      </div>
+      <button class="button button_theme_black">Обсудить проект</button>
+    </div>
+  </section>
+  <section class="faq">
+    <h2 class="h2 h2_theme_black">Вопрос-ответ</h2>
+    <div class="faq__questions">
+      <div class="question question_closed">
+        <div class="question__title">
+          <h4>Делаете только дизайн?</h4>
+          <img src="icons/plus.svg" alt="">
+        </div>
+
+      </div>
+      <div class="question question_opened">
+        <div class="question__title">
+          <h4>Почему тильда?</h4>
+          <img src="icons/plus.svg" alt="">
+        </div>
+        <div class="question__answer">
+          Тильда уже давно перестала быть просто конструктором. Сейчас на платформе разрабатывают уникальные лендинги и
+          даже небольшие интернет магазины.<br><br> А еще:
+          <ul>
+            <li>Не нужен программист, тильдой легко управлять</li>
+            <li>Можно менять контент самому без помощи специалиста</li>
+            <li>Многие делают сайты именно на тильде. Например сбер, яндекс, и тд</li>
+            <li>Можно подключить разные сервисы, формы (телеграм, мейлчамп, crm)</li>
+            <li>Адекватные цены тарифов</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="question question_closed">
+        <div class="question__title">
+          <h4>Какие сроки?</h4>
+          <img src="icons/plus.svg" alt="">
+        </div>
+
+      </div>
+      <div class="question question_closed">
+        <div class="question__title">
+          <h4>Как происходит оплата?</h4>
+          <img src="icons/plus.svg" alt="">
+        </div>
+      </div>
+      <div class="question question_closed">
+        <div class="question__title">
+          <h4>Сколько правок можно внести?</h4>
+          <img src="icons/plus.svg" alt="">
+        </div>
+      </div>
+      <div class="question question_closed">
+        <div class="question__title">
+          <h4>Работаете со срочными проектами?</h4>
+          <img src="icons/plus.svg" alt="">
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+  <section class="contact-form">
+    <h2 class=" h2 h2_theme_light">Оставьте заявку</h2>
+    <div class="contact-form__definition">Я сам напишу вам, и сообщу все детали</div>
+    <form class="contact-form-dialog">
+<input type="text" placeholder="Имя" class="input">
+<input type="text" placeholder="Почта" class="input">
+<select class="contact-form-dialog__service">
+  <option selected>
+    Услуга
+  </option>
+
+</select>
+<textarea class="contact-form-dialog__comment"  placeholder="Комментарий"></textarea>
+<button class="button button_theme_black">Отправить сообщение</button>
+<div class="contact-form__social">
+  <img src="icons/facebook.svg" alt="">
+  <img src="icons/twitter.svg" alt="">
+  <img src="icons/vk.svg" alt="">
+</div>
+    </form>
+    <div class="icon icon_chat2"><img src="icons/chat.svg" alt=""></div>
+    <div class="icon icon_developer2"><img src="icons/developer.svg" alt=""></div>
+    <div class="icon icon_lighting2"><img src="icons/lighting.svg" alt=""></div>
+  </section>
+
+
+</body>
+
+</html>
