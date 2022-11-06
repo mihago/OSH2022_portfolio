@@ -12,6 +12,7 @@
 
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mediaqueries.css">
 
 </head>
 
@@ -33,8 +34,8 @@
       довести до заявки или покупки
     </p>
     <div class="header__buttons">
-      <button class="button button_theme_black">Связаться в Telegram</button>
-      <button class="button button_theme_light"><img src="icons/play.svg"
+      <button class="button button_black">Связаться в Telegram</button>
+      <button class="button button_light"><img src="icons/play.svg"
           alt="Посмотреть портфолио">Видеопортфолио</button>
     </div>
     <div class="icon icon_chat1"><img src="icons/chat.svg" alt=""></div>
@@ -45,13 +46,13 @@
   <section class="portfolio">
     <div class="filters">
       <a class="filters__item filters__item_active">Все</a>
-      <!-- TODO:Подумать про ссылки или кнопки -->
+      
       <a class="filters__item filters__item_inactive">Сайт под ключ</a>
       <a class="filters__item filters__item_inactive">Разработка</a>
       <a class="filters__item filters__item_inactive">Дизайн</a>
     </div>
     <div class="gallery">
-      <!-- TODO:Позиционирование -->
+    
       <div class="gallery__item gallery__item1"></div>
       <div class="gallery__item gallery__item2"></div>
       <div class="gallery__item gallery__item3"></div>
@@ -61,17 +62,16 @@
     </div>
   </section>
   <section class="profile">
-    <div class="profile__img-container"><img class="profile__img" src="img/Rectangle 554.png" alt="">
+    <div class="profile__img">
       <div class="icon icon_cup1"><img src="icons/cup.svg" alt=""></div></div>
     <div class="profile__information">
-      <h2 class="h2 h2_theme_light">Designer & Developer</h2>
+      <h2 class=" h2_light">Designer & Developer</h2>
       <p class="profile__text">Меня зовут гигачад. За 3 года создания сайтов я основал свою студию, собрал людей,
         готовых к плотной работе.</p>
       <p class="profile__text"> Запустили лендинг и б2б продукт для UFC. Работали с ВШЭ и МИЭМом. Запустили множество
         эвентовых проектов и брендинг. Готовы забирать в команду лучших,
         прокачивать их компетенции, и взращивать русское айти комьюнити</p>
       <div class="profile__features">
-        <!-- я выбрал именно такое название для классов, так как  profile__features будет определять внешнюю геометрию, а feature - нет -->
         <div class="feature">
           <div class="feature__number">40+</div>
           <div class="feature__text">Сайтов<br>запустили</div>
@@ -88,7 +88,7 @@
     </div>
   </section>
   <section class="services">
-    <h2 class="h2 h2_theme_black">Услуги</h2>
+    <h2 class=" h2_black">Услуги</h2>
     <div class="services__container">
       <div class="service">
         <span class="service__number">01</span>
@@ -118,14 +118,14 @@
   </section>
   <section class="count-price">
     
-    <h2 class="h2 h2_theme_light">Подсчёт стоимости</h2>
+    <h2 class=" h2_light">Подсчёт стоимости</h2>
     
-      <form class="count-price-dialog">
-        <select name="work-type" id="work-type" class="count-price-dialog__work-type">
+      <form class="count-price__form">
+        <select name="work-type" id="work-type" class="count-price__work-type">
           <option selected>Тип работы</option>
           <option>Веб-дизайн</option>
         </select>
-        <select name="project-size" id="project-size" class="count-price-dialog__project-size">
+        <select name="project-size" id="project-size" class="count-price__project-size">
           <option selected>Насколько большой проект?</option>
           <option>Маленький</option>
           <option>Побольше</option>
@@ -133,41 +133,41 @@
         </select>
         <div class="checkbox-container">
           <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
-          <div class="chekbox-container__definition">Да, я слышал про осеннюю школу.<br>
+          <div class="chekbox-container__definition">Да, я слышал про осеннюю школу.
             Интересно а после нее будет егэ?</div>
         </div>
-        <button class="button_theme_light button count-price-dialog__button">Рассчитать стоимость</button>
+        <button class="button_light button count-price__button">Рассчитать стоимость</button>
       </form>
     
     <div class="count-price-eval">
       <h3>Примерный подсчет:</h3>
-      <div class="count-price-eval-item">
+      <div class="count-price-eval__item">
         <!--Здесь создан div без css разметки, чтобы названия следующих классов были интуитивно понятны. Если можно как-то лучше, был бы рад узнать-->
-        <div class="count-price-eval-item__title">
+        <div class="count-price-eval__subtitle">
           Стоимость
         </div>
-        <div class="count-price-eval-item__text">
+        <div class="count-price-eval__subtext">
           От 120 000 ₽
         </div>
 
       </div>
-      <div class="count-price-eval-item">
-        <div class="count-price-eval-item__title">
+      <div class="count-price-eval__item">
+        <div class="count-price-eval__subtitle">
           Примерные сроки
         </div>
-        <div class="count-price-eval-item__text">
+        <div class="count-price-eval__subtext">
           14 рабочих дней
         </div>
 
 
       </div>
-      <button class="button button_theme_black">Обсудить проект</button>
+      <button class="button button_black">Обсудить проект</button>
     </div>
     <div class="icon icon_timer1"><img src="icons/timer.svg" alt=""></div>
     <div class="icon icon_developer2"><img src="icons/developer.svg" alt=""></div>
   </section>
   <section class="faq">
-    <h2 class="h2 h2_theme_black">Вопрос-ответ</h2>
+    <h2 class=" h2_black">Вопрос-ответ</h2>
     <div class="faq__questions">
       <div class="question question_closed">
         <div class="question__title">
@@ -224,21 +224,21 @@
 
     </div>
   </section>
-  <section class="contact-form">
-    <h2 class=" h2 h2_theme_light">Оставьте заявку</h2>
-    <div class="contact-form__definition">Я сам напишу вам, и сообщу все детали</div>
-    <form class="contact-form-dialog">
+  <section class="contact">
+    <h2 class="  h2_light">Оставьте заявку</h2>
+    <div class="contact__definition">Я сам напишу вам, и сообщу все детали</div>
+    <form class="contact-form">
 <input type="text" placeholder="Имя" class="input">
 <input type="text" placeholder="Почта" class="input">
-<select class="contact-form-dialog__service">
+<select class="contact-form__service">
   <option selected>
     Услуга
   </option>
 
 </select>
-<textarea class="contact-form-dialog__comment"  placeholder="Комментарий"></textarea>
-<button class="button button_theme_black">Отправить сообщение</button>
-<div class="contact-form__social">
+<textarea class="contact-form__comment"  placeholder="Комментарий"></textarea>
+<button class="button button_black">Отправить сообщение</button>
+<div class="contact__social">
   <img src="icons/facebook.svg" alt="">
   <img src="icons/twitter.svg" alt="">
   <img src="icons/vk.svg" alt="">
