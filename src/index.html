@@ -20,13 +20,11 @@
   <header class="header">
     <div class="header__logo">Developer</div>
     <nav class="nav">
-      <a class="nav__item">
-        Работы
-        <a />
+      <a class="nav__item">Работы</a>
         <a class="nav__item">Услуги</a>
-        <a class="nav__item">Процесс</>
-          <a class="nav__item">Обо мне</a>
-          <a class="nav__item">Контакты</a>
+        <a class="nav__item">Процесс</a>
+        <a class="nav__item">Обо мне</a>
+        <a class="nav__item">Контакты</a>
     </nav>
     <h1 class="header__phrase">Сайты на Тильде, которые убеждают и продают</h1>
     <p class="header__definition">
@@ -35,24 +33,22 @@
     </p>
     <div class="header__buttons">
       <button class="button button_black">Связаться в Telegram</button>
-      <button class="button button_light"><img src="icons/play.svg"
-          alt="Посмотреть портфолио">Видеопортфолио</button>
+      <button class="button button_light"><img src="icons/play.svg" alt="Посмотреть портфолио">Видеопортфолио</button>
     </div>
     <div class="icon icon_chat1"><img src="icons/chat.svg" alt=""></div>
     <div class="icon icon_developer1"><img src="icons/developer.svg" alt=""></div>
     <div class="icon icon_lighting1"><img src="icons/lighting.svg" alt=""></div>
-    
+
   </header>
   <section class="portfolio">
     <div class="filters">
       <a class="filters__item filters__item_active">Все</a>
-      
-      <a class="filters__item filters__item_inactive">Сайт под ключ</a>
-      <a class="filters__item filters__item_inactive">Разработка</a>
-      <a class="filters__item filters__item_inactive">Дизайн</a>
+      <a class="filters__item ">Сайт под ключ</a>
+      <a class="filters__item ">Разработка</a>
+      <a class="filters__item ">Дизайн</a>
     </div>
-    <div class="gallery">
-    
+    <div class="gallery gallery_all">
+
       <div class="gallery__item gallery__item1"></div>
       <div class="gallery__item gallery__item2"></div>
       <div class="gallery__item gallery__item3"></div>
@@ -63,7 +59,8 @@
   </section>
   <section class="profile">
     <div class="profile__img">
-      <div class="icon icon_cup1"><img src="icons/cup.svg" alt=""></div></div>
+      <div class="icon icon_cup1"><img src="icons/cup.svg" alt=""></div>
+    </div>
     <div class="profile__information">
       <h2 class=" h2_light">Designer & Developer</h2>
       <p class="profile__text">Меня зовут Михаил Саввин. За 4 года создания сайтов я основал свою студию, собрал людей,
@@ -117,28 +114,29 @@
     </div>
   </section>
   <section class="count-price">
-    
+
     <h2 class=" h2_light">Подсчёт стоимости</h2>
-    
-      <form class="count-price__form">
-        <select name="work-type" id="work-type" class="count-price__work-type">
-          <option selected>Тип работы</option>
-          <option>Веб-дизайн</option>
-        </select>
-        <select name="project-size" id="project-size" class="count-price__project-size">
-          <option selected>Насколько большой проект?</option>
-          <option>Маленький</option>
-          <option>Побольше</option>
-          <option>Большой</option>
-        </select>
-        <div class="checkbox-container">
-          <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
-          <div class="chekbox-container__definition">Да, я слышал про осеннюю школу.
-            Интересно а после нее будет егэ?</div>
-        </div>
-        <button class="button_light button count-price__button">Рассчитать стоимость</button>
-      </form>
-    
+
+    <form class="count-price__form">
+      
+      <select name="work-type" id="work-type" class="count-price__work-type" aria-placeholder="Тип работы">
+        <option disabled selected>Тип работы</option>
+        <option>Веб-дизайн</option>
+      </select>
+      <select name="project-size" id="project-size" disabled class="count-price__project-size">
+        <option selected disabled>Насколько большой проект?</option>
+        <option>Маленький</option>
+        <option>Побольше</option>
+        <option>Большой</option>
+      </select>
+      <div class="checkbox-container">
+        <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
+        <div class="chekbox-container__definition">Да, я слышал про осеннюю школу.
+          Интересно а после нее будет егэ?</div>
+      </div>
+      <button class="button_light button count-price__button">Рассчитать стоимость</button>
+    </form>
+
     <div class="count-price-eval">
       <h3>Примерный подсчет:</h3>
       <div class="count-price-eval__item">
@@ -161,7 +159,7 @@
 
 
       </div>
-      <button class="button button_black">Обсудить проект</button>
+      <button class="button button_black" disabled>Обсудить проект</button>
     </div>
     <div class="icon icon_timer1"><img src="icons/timer.svg" alt=""></div>
     <div class="icon icon_developer2"><img src="icons/developer.svg" alt=""></div>
@@ -174,9 +172,20 @@
           <h4>Делаете только дизайн?</h4>
           <img src="icons/plus.svg" alt="">
         </div>
+        <div class="question__answer">
+          Тильда уже давно перестала быть просто конструктором. Сейчас на платформе разрабатывают уникальные лендинги и
+          даже небольшие интернет магазины.<br><br> А еще:
+          <ul>
+            <li>Не нужен программист, тильдой легко управлять</li>
+            <li>Можно менять контент самому без помощи специалиста</li>
+            <li>Многие делают сайты именно на тильде. Например сбер, яндекс, и тд</li>
+            <li>Можно подключить разные сервисы, формы (телеграм, мейлчамп, crm)</li>
+            <li>Адекватные цены тарифов</li>
+          </ul>
+        </div>
 
       </div>
-      <div class="question question_opened">
+      <div class="question question_closed">
         <div class="question__title">
           <h4>Почему тильда?</h4>
           <img src="icons/plus.svg" alt="">
@@ -198,13 +207,35 @@
         <div class="question__title">
           <h4>Какие сроки?</h4>
           <img src="icons/plus.svg" alt="">
+          
         </div>
-
+        <div class="question__answer">
+          Тильда уже давно перестала быть просто конструктором. Сейчас на платформе разрабатывают уникальные лендинги и
+          даже небольшие интернет магазины.<br><br> А еще:
+          <ul>
+            <li>Не нужен программист, тильдой легко управлять</li>
+            <li>Можно менять контент самому без помощи специалиста</li>
+            <li>Многие делают сайты именно на тильде. Например сбер, яндекс, и тд</li>
+            <li>Можно подключить разные сервисы, формы (телеграм, мейлчамп, crm)</li>
+            <li>Адекватные цены тарифов</li>
+          </ul>
+        </div>
       </div>
       <div class="question question_closed">
         <div class="question__title">
           <h4>Как происходит оплата?</h4>
           <img src="icons/plus.svg" alt="">
+        </div>
+        <div class="question__answer">
+          Тильда уже давно перестала быть просто конструктором. Сейчас на платформе разрабатывают уникальные лендинги и
+          даже небольшие интернет магазины.<br><br> А еще:
+          <ul>
+            <li>Не нужен программист, тильдой легко управлять</li>
+            <li>Можно менять контент самому без помощи специалиста</li>
+            <li>Многие делают сайты именно на тильде. Например сбер, яндекс, и тд</li>
+            <li>Можно подключить разные сервисы, формы (телеграм, мейлчамп, crm)</li>
+            <li>Адекватные цены тарифов</li>
+          </ul>
         </div>
       </div>
       <div class="question question_closed">
@@ -212,11 +243,33 @@
           <h4>Сколько правок можно внести?</h4>
           <img src="icons/plus.svg" alt="">
         </div>
+        <div class="question__answer">
+          Тильда уже давно перестала быть просто конструктором. Сейчас на платформе разрабатывают уникальные лендинги и
+          даже небольшие интернет магазины.<br><br> А еще:
+          <ul>
+            <li>Не нужен программист, тильдой легко управлять</li>
+            <li>Можно менять контент самому без помощи специалиста</li>
+            <li>Многие делают сайты именно на тильде. Например сбер, яндекс, и тд</li>
+            <li>Можно подключить разные сервисы, формы (телеграм, мейлчамп, crm)</li>
+            <li>Адекватные цены тарифов</li>
+          </ul>
+        </div>
       </div>
       <div class="question question_closed">
         <div class="question__title">
           <h4>Работаете со срочными проектами?</h4>
           <img src="icons/plus.svg" alt="">
+        </div>
+        <div class="question__answer">
+          Тильда уже давно перестала быть просто конструктором. Сейчас на платформе разрабатывают уникальные лендинги и
+          даже небольшие интернет магазины.<br><br> А еще:
+          <ul>
+            <li>Не нужен программист, тильдой легко управлять</li>
+            <li>Можно менять контент самому без помощи специалиста</li>
+            <li>Многие делают сайты именно на тильде. Например сбер, яндекс, и тд</li>
+            <li>Можно подключить разные сервисы, формы (телеграм, мейлчамп, crm)</li>
+            <li>Адекватные цены тарифов</li>
+          </ul>
         </div>
       </div>
 
@@ -228,28 +281,28 @@
     <h2 class="  h2_light">Оставьте заявку</h2>
     <div class="contact__definition">Я сам напишу вам, и сообщу все детали</div>
     <form class="contact-form">
-<input type="text" placeholder="Имя" class="input">
-<input type="text" placeholder="Почта" class="input">
-<select class="contact-form__service">
-  <option selected>
-    Услуга
-  </option>
+      <input type="text" placeholder="Имя" class="input">
+      <input type="text" placeholder="Почта" class="input">
+      <select class="contact-form__service">
+        <option selected>
+          Услуга
+        </option>
 
-</select>
-<textarea class="contact-form__comment"  placeholder="Комментарий"></textarea>
-<button class="button button_black">Отправить сообщение</button>
-<div class="contact__social">
-  <img src="icons/facebook.svg" alt="">
-  <img src="icons/twitter.svg" alt="">
-  <img src="icons/vk.svg" alt="">
-</div>
+      </select>
+      <textarea class="contact-form__comment" placeholder="Комментарий"></textarea>
+      <button class="button button_black">Отправить сообщение</button>
+      <div class="contact__social">
+        <img src="icons/facebook.svg" alt="">
+        <img src="icons/twitter.svg" alt="">
+        <img src="icons/vk.svg" alt="">
+      </div>
     </form>
     <div class="icon icon_chat2"><img src="icons/chat_big.svg" alt=""></div>
     <div class="icon icon_developer3"><img src="icons/developer.svg" alt=""></div>
     <div class="icon icon_lighting2"><img src="icons/lighting.svg" alt=""></div>
   </section>
 
-
+<script src="js/index.js"> </script>
 </body>
 
 </html>

@@ -1,3 +1,26 @@
+@media(min-width:2100px){
+    .header{
+        width:75vw;
+    }
+    .contact{
+        width:75vw;
+       
+    }
+    
+}
+@media(min-width:1600px){
+    .contact{
+        width:80vw;
+       
+    }
+    .icon_developer2{
+        right:20vw;
+    }
+
+    .icon_timer1{
+        left: 20vw;
+    }
+}
 @media(max-width:1300px){
     .icon_chat2{
         left:200px;
@@ -34,6 +57,10 @@ width: 100%;
     .header {
         width: 90vw;
     }
+    .gallery_design{
+        gap: 20px;
+        grid-template-rows:  calc(0.345*90vw)  calc(0.7*90vw);
+    }
 }
 
 @media(max-width:1100px) {
@@ -47,6 +74,7 @@ width: 100%;
     .icon_chat2{
         left:100px;
     }
+   
 }
 
 @media(max-width:992px) {
@@ -75,11 +103,17 @@ width: 100%;
         display: none;
     }
 
-    .gallery {
+    .gallery_all {
 
         gap: 20px;
         grid-template-rows: calc(0.397*90vw) calc(0.345*90vw) calc(0.469*90vw) calc(0.397*90vw);
     }
+    .gallery_turnkey-website{
+    grid-template-rows: calc(0.397*90vw) calc(90vw*0.8);
+    }
+    .gallery_development{
+        grid-template-rows: calc(0.469*90vw);
+        }
 
     .icon_developer1 {
         display: none;
@@ -102,8 +136,12 @@ width: 100%;
     .header__phrase{
         margin-top: 80px;
     }
+    .nav{
+        width:100px;
+       
+    }
     .nav__item{
-        display: none;
+        display:none;
     }
     .icon_developer2{
         display: none;
@@ -134,7 +172,7 @@ width: 100%;
 }
 
 @media(max-width:768px) {
-    .gallery {
+    .gallery_all {
         grid-template:
             "item1"
             "item2"
